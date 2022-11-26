@@ -22,3 +22,16 @@ else{
     demo2.innerHTML = (`${year} is not leap year`);
 }
 
+//is first january sunday or not 2014-2050
+
+for(let i = 2014; i <=2050; i++){
+    const d = new Date(i, 0, 1);
+    const day = d.getDay();
+    if(day === 0){
+        console.log(`1st january of ${i} is Sunday`)
+    }
+        
+}
+const o = new Date();
+const mil = o.getMilliseconds();
+console.log(mil);
